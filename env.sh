@@ -2,7 +2,7 @@
 
 export MUJOCO_PY_MUJOCO_PATH="$HOME/.mujoco/mujoco210"
 echo "MUJOCO_PY_MUJOCO_PATH: $MUJOCO_PY_MUJOCO_PATH"
-export LD_LIBRARY_PATH="$HOME/.mujoco/mujoco210/bin:${LD_LIBRARY_PATH}"
+export LD_LIBRARY_PATH="$HOME/.mujoco/mujoco210/bin:/usr/lib/nvidia:${LD_LIBRARY_PATH}"
 echo "LD_LIBRARY_PATH: $LD_LIBRARY_PATH"
 export MUJOCO_GL=egl
 echo "MUJOCO_GL: $MUJOCO_GL"

@@ -92,8 +92,11 @@ class AWACAgent(BaseAgent):
             # HINT: Approximate V(s) by sampling one action a' ~ π(·|s) from
             #     actor and evaluating Q(s, a') with get_q.
             ### YOUR CODE START HERE ###
+            q_value = self.critic.get_q(ob_no, ac_na)
+            ac_sample = self.actor(ob_no).sample()
+            v_value = self.critic.get_q(ob_no, ac_sample)
 
-            adv = None
+            adv = q_value - v_value
             ### YOUR CODE END HERE ###
         return adv
 
@@ -122,7 +125,7 @@ class AWACAgent(BaseAgent):
             #     the AWAC critic Bellman backup.
             with torch.no_grad():
                 ### YOUR CODE START HERE ###
-                next_actions = None
+                next_actions = self.actor(ptu.from_numpy(next_ob_no)).sample()
                 ### YOUR CODE END HERE ###
 
             critic_loss = self.critic.update(
@@ -133,8 +136,8 @@ class AWACAgent(BaseAgent):
             # 1): Estimate the advantage
             # 2): Calculate the actor loss
             ### YOUR CODE START HERE ###
-
-            actor_loss = None
+            adv_n = self.estimate_advantage(ob_no, ac_na)
+            actor_loss = self.actor.update(ob_no, ac_na, adv_n)
             ### YOUR CODE END HERE ###
 
             self.critic.update_target_network()

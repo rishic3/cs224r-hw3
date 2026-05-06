@@ -187,7 +187,7 @@ class MLPPolicyAWAC(MLPPolicy):
         log_prob_n = dist.log_prob(actions)
         # TODO: Use adv_n and self.lambda_awac to compute exponential weights.
         ### YOUR CODE START HERE ###
-        exp_weights = None
+        exp_weights = torch.exp(adv_n / self.lambda_awac)
         ### YOUR CODE END HERE ###
         exp_weights = exp_weights.clamp(max=50.0)
         actor_loss = -(log_prob_n * exp_weights).mean()

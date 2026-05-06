@@ -169,11 +169,16 @@ class AWACCritic(BaseCritic):
         #     needs to be adjusted.
         # HINT: Compute MSE losses loss1 and loss2 for q_net and q_net2.
         ### YOUR CODE START HERE ###
+        q1 = self._get_q_value(self.q_net, ob_no, ac_na)
+        q2 = self._get_q_value(self.q_net2, ob_no, ac_na)
 
-        # TD target = r + γ * min(Q1_target, Q2_target)(s', a') * (1 - done).
-        
-        loss = None
-        loss2 = None
+        with torch.no_grad():
+            # TD target = r + γ * min(Q1_target, Q2_target)(s', a') * (1 - done).
+            q_target = self.get_target_q(next_ob_no, next_actions)
+            td_target = reward_n + self.gamma * q_target * (1 - terminal_n)
+
+        loss = self.mse_loss(q1, td_target)
+        loss2 = self.mse_loss(q2, td_target)
         ### YOUR CODE END HERE ###
 
         self.optimizer.zero_grad()

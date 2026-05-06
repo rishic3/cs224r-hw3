@@ -1,0 +1,1681 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:66: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  ).setParseAction(self._family)
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  self._parser.parseString(pattern)
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  self._parser.resetCache()
+Warning: All of online environments libraries in D4RL have been moved ]8;;https://github.com/Farama-Foundation/Gymnasium\Gymnasium]8;;\, ]8;;https://github.com/Farama-Foundation/MiniGrid\MiniGrid]8;;\ and ]8;;https://github.com/Farama-Foundation/Gymnasium-Robotics\Gymnasium-Robotics]8;;\, and all offline datasets in D4RL have been moved to ]8;;https://github.com/Farama-Foundation/Minari\Minari]8;;\.
+These new versions include large bug fixes, new versions of Python, and are where all new development will continue. Please upgrade these libraries as soon as you're able to do so.
+If you'd like to read more about the story behind this switch, please check out ]8;;https://farama.org/Announcing-Minari\this blog post]8;;\.
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:283: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.12; use exec_module() instead
+pybullet build time: Jan 29 2025 23:16:28
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/rishic/.netrc.
+wandb: Currently logged in as: rishic (rishic-stanford-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:268: DeprecationWarning: Read the `app_url` setting from the appropriate Settings object.
+  app_url = wandb.util.app_url(tags["base_url"])  # type: ignore[index]
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:279: DeprecationWarning: The `Scope.user` setter is deprecated in favor of `Scope.set_user()`.
+  self.scope.user = {"email": email}
+wandb: setting up run 60zkqkjy
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:268: DeprecationWarning: Read the `app_url` setting from the appropriate Settings object.
+  app_url = wandb.util.app_url(tags["base_url"])  # type: ignore[index]
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:279: DeprecationWarning: The `Scope.user` setter is deprecated in favor of `Scope.set_user()`.
+  self.scope.user = {"email": email}
+wandb: Tracking run with wandb version 0.25.0
+wandb: Run data is saved locally in /home/rishic/Code/cs224r/hw3/wandb/run-20260504_220101-60zkqkjy
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run awac_antmaze_umaze_seed2
+wandb: ⭐️ View project at https://wandb.ai/rishic-stanford-university/HW3_OfflineRL_antmaze-umaze-v0-modal-v1
+wandb: 🚀 View run at https://wandb.ai/rishic-stanford-university/HW3_OfflineRL_antmaze-umaze-v0-modal-v1/runs/60zkqkjy
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment antmaze-umaze-v0 is out of date. You should consider upgrading to version `v2` with the environment ID `antmaze-umaze-v2`.[0m
+  logger.warn(
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/d4rl/locomotion/ant.py:180: UserWarning: [33mThis environment is deprecated. Please use the most recent version of this environment.[0m
+  offline_env.OfflineEnv.__init__(self, **kwargs)
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+
+
+
+LOGGING TO:  /home/rishic/Code/cs224r/hw3/cs224r/scripts/../../data/hw3_awac_antmaze_umaze_seed2_antmaze-umaze-v0_04-05-2026_22-01-01 
+
+
+
+Using GPU id 0
+Target Goal:  (0.7108261410813583, 8.243587428137031)
+Target Goal:  (0.5226921191064102, 8.639970304179204)
+
+Loading D4RL offline dataset from environment...
+load datafile:   0%|          | 0/8 [00:00<?, ?it/s]load datafile:  12%|█▎        | 1/8 [00:00<00:00,  8.83it/s]load datafile:  38%|███▊      | 3/8 [00:00<00:00,  8.45it/s]load datafile:  50%|█████     | 4/8 [00:00<00:00,  6.69it/s]load datafile:  62%|██████▎   | 5/8 [00:01<00:00,  3.94it/s]load datafile: 100%|██████████| 8/8 [00:01<00:00,  7.72it/s]
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/gym/utils/seeding.py:38: DeprecationWarning: [33mWARN: Function `rng.randn(*size)` is marked as deprecated and will be removed in the future. Please use `rng.standard_normal(size)` instead.[0m
+  deprecation(
+Loaded 998573 transitions (10131 episodes) from D4RL dataset.
+
+
+********** Iteration 0 ************
+
+Training agent...
+
+
+********** Iteration 1000 ************
+
+Training agent...
+
+
+********** Iteration 2000 ************
+
+Training agent...
+
+
+********** Iteration 3000 ************
+
+Training agent...
+
+
+********** Iteration 4000 ************
+
+Training agent...
+
+
+********** Iteration 5000 ************
+
+Training agent...
+
+
+********** Iteration 6000 ************
+
+Training agent...
+
+
+********** Iteration 7000 ************
+
+Training agent...
+
+
+********** Iteration 8000 ************
+
+Training agent...
+
+
+********** Iteration 9000 ************
+
+Training agent...
+
+
+********** Iteration 10000 ************
+
+Training agent...
+
+
+********** Iteration 11000 ************
+
+Training agent...
+
+
+********** Iteration 12000 ************
+
+Training agent...
+
+
+********** Iteration 13000 ************
+
+Training agent...
+
+
+********** Iteration 14000 ************
+
+Training agent...
+
+
+********** Iteration 15000 ************
+
+Training agent...
+
+
+********** Iteration 16000 ************
+
+Training agent...
+
+
+********** Iteration 17000 ************
+
+Training agent...
+
+
+********** Iteration 18000 ************
+
+Training agent...
+
+
+********** Iteration 19000 ************
+
+Training agent...
+
+
+********** Iteration 20000 ************
+
+Training agent...
+
+
+********** Iteration 21000 ************
+
+Training agent...
+
+
+********** Iteration 22000 ************
+
+Training agent...
+
+
+********** Iteration 23000 ************
+
+Training agent...
+
+
+********** Iteration 24000 ************
+
+Training agent...
+
+
+********** Iteration 25000 ************
+
+Training agent...
+
+
+********** Iteration 26000 ************
+
+Training agent...
+
+
+********** Iteration 27000 ************
+
+Training agent...
+
+
+********** Iteration 28000 ************
+
+Training agent...
+
+
+********** Iteration 29000 ************
+
+Training agent...
+
+
+********** Iteration 30000 ************
+
+Training agent...
+
+
+********** Iteration 31000 ************
+
+Training agent...
+
+
+********** Iteration 32000 ************
+
+Training agent...
+
+
+********** Iteration 33000 ************
+
+Training agent...
+
+
+********** Iteration 34000 ************
+
+Training agent...
+
+
+********** Iteration 35000 ************
+
+Training agent...
+
+
+********** Iteration 36000 ************
+
+Training agent...
+
+
+********** Iteration 37000 ************
+
+Training agent...
+
+
+********** Iteration 38000 ************
+
+Training agent...
+
+
+********** Iteration 39000 ************
+
+Training agent...
+
+
+********** Iteration 40000 ************
+
+Training agent...
+
+
+********** Iteration 41000 ************
+
+Training agent...
+
+
+********** Iteration 42000 ************
+
+Training agent...
+
+
+********** Iteration 43000 ************
+
+Training agent...
+
+
+********** Iteration 44000 ************
+
+Training agent...
+
+
+********** Iteration 45000 ************
+
+Training agent...
+
+
+********** Iteration 46000 ************
+
+Training agent...
+
+
+********** Iteration 47000 ************
+
+Training agent...
+
+
+********** Iteration 48000 ************
+
+Training agent...
+
+
+********** Iteration 49000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 50000
+running time 177.493942
+  [Eval video] saved to: /home/rishic/Code/cs224r/hw3/cs224r/scripts/../../data/hw3_awac_antmaze_umaze_seed2_antmaze-umaze-v0_04-05-2026_22-01-01/eval_traj_last.mp4
+Train_EnvstepsSoFar : 50000
+TimeSinceStart : 177.49394249916077
+Critic Loss : 3.019406795501709
+Critic Loss2 : 3.0472428798675537
+Actor Loss : 30.052261352539062
+Actor LR : 9.330127018922332e-05
+Eval_AverageReturn : -700.0
+Eval_StdReturn : 0.0
+Eval_MaxReturn : -700.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 700.0
+Buffer_Size : 998573
+Done logging...
+
+
+
+
+********** Iteration 50000 ************
+
+Training agent...
+
+
+********** Iteration 51000 ************
+
+Training agent...
+
+
+********** Iteration 52000 ************
+
+Training agent...
+
+
+********** Iteration 53000 ************
+
+Training agent...
+
+
+********** Iteration 54000 ************
+
+Training agent...
+
+
+********** Iteration 55000 ************
+
+Training agent...
+
+
+********** Iteration 56000 ************
+
+Training agent...
+
+
+********** Iteration 57000 ************
+
+Training agent...
+
+
+********** Iteration 58000 ************
+
+Training agent...
+
+
+********** Iteration 59000 ************
+
+Training agent...
+
+
+********** Iteration 60000 ************
+
+Training agent...
+
+
+********** Iteration 61000 ************
+
+Training agent...
+
+
+********** Iteration 62000 ************
+
+Training agent...
+
+
+********** Iteration 63000 ************
+
+Training agent...
+
+
+********** Iteration 64000 ************
+
+Training agent...
+
+
+********** Iteration 65000 ************
+
+Training agent...
+
+
+********** Iteration 66000 ************
+
+Training agent...
+
+
+********** Iteration 67000 ************
+
+Training agent...
+
+
+********** Iteration 68000 ************
+
+Training agent...
+
+
+********** Iteration 69000 ************
+
+Training agent...
+
+
+********** Iteration 70000 ************
+
+Training agent...
+
+
+********** Iteration 71000 ************
+
+Training agent...
+
+
+********** Iteration 72000 ************
+
+Training agent...
+
+
+********** Iteration 73000 ************
+
+Training agent...
+
+
+********** Iteration 74000 ************
+
+Training agent...
+
+
+********** Iteration 75000 ************
+
+Training agent...
+
+
+********** Iteration 76000 ************
+
+Training agent...
+
+
+********** Iteration 77000 ************
+
+Training agent...
+
+
+********** Iteration 78000 ************
+
+Training agent...
+
+
+********** Iteration 79000 ************
+
+Training agent...
+
+
+********** Iteration 80000 ************
+
+Training agent...
+
+
+********** Iteration 81000 ************
+
+Training agent...
+
+
+********** Iteration 82000 ************
+
+Training agent...
+
+
+********** Iteration 83000 ************
+
+Training agent...
+
+
+********** Iteration 84000 ************
+
+Training agent...
+
+
+********** Iteration 85000 ************
+
+Training agent...
+
+
+********** Iteration 86000 ************
+
+Training agent...
+
+
+********** Iteration 87000 ************
+
+Training agent...
+
+
+********** Iteration 88000 ************
+
+Training agent...
+
+
+********** Iteration 89000 ************
+
+Training agent...
+
+
+********** Iteration 90000 ************
+
+Training agent...
+
+
+********** Iteration 91000 ************
+
+Training agent...
+
+
+********** Iteration 92000 ************
+
+Training agent...
+
+
+********** Iteration 93000 ************
+
+Training agent...
+
+
+********** Iteration 94000 ************
+
+Training agent...
+
+
+********** Iteration 95000 ************
+
+Training agent...
+
+
+********** Iteration 96000 ************
+
+Training agent...
+
+
+********** Iteration 97000 ************
+
+Training agent...
+
+
+********** Iteration 98000 ************
+
+Training agent...
+
+
+********** Iteration 99000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 100000
+running time 375.961989
+  [Eval video] saved to: /home/rishic/Code/cs224r/hw3/cs224r/scripts/../../data/hw3_awac_antmaze_umaze_seed2_antmaze-umaze-v0_04-05-2026_22-01-01/eval_traj_last.mp4
+Train_EnvstepsSoFar : 100000
+TimeSinceStart : 375.96198868751526
+Critic Loss : 5.037755012512207
+Critic Loss2 : 4.755146026611328
+Actor Loss : 24.209321975708008
+Actor LR : 7.500000000000035e-05
+Eval_AverageReturn : -675.760009765625
+Eval_StdReturn : 81.74241638183594
+Eval_MaxReturn : -277.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 675.88
+Buffer_Size : 998573
+Done logging...
+
+
+
+
+********** Iteration 100000 ************
+
+Training agent...
+
+
+********** Iteration 101000 ************
+
+Training agent...
+
+
+********** Iteration 102000 ************
+
+Training agent...
+
+
+********** Iteration 103000 ************
+
+Training agent...
+
+
+********** Iteration 104000 ************
+
+Training agent...
+
+
+********** Iteration 105000 ************
+
+Training agent...
+
+
+********** Iteration 106000 ************
+
+Training agent...
+
+
+********** Iteration 107000 ************
+
+Training agent...
+
+
+********** Iteration 108000 ************
+
+Training agent...
+
+
+********** Iteration 109000 ************
+
+Training agent...
+
+
+********** Iteration 110000 ************
+
+Training agent...
+
+
+********** Iteration 111000 ************
+
+Training agent...
+
+
+********** Iteration 112000 ************
+
+Training agent...
+
+
+********** Iteration 113000 ************
+
+Training agent...
+
+
+********** Iteration 114000 ************
+
+Training agent...
+
+
+********** Iteration 115000 ************
+
+Training agent...
+
+
+********** Iteration 116000 ************
+
+Training agent...
+
+
+********** Iteration 117000 ************
+
+Training agent...
+
+
+********** Iteration 118000 ************
+
+Training agent...
+
+
+********** Iteration 119000 ************
+
+Training agent...
+
+
+********** Iteration 120000 ************
+
+Training agent...
+
+
+********** Iteration 121000 ************
+
+Training agent...
+
+
+********** Iteration 122000 ************
+
+Training agent...
+
+
+********** Iteration 123000 ************
+
+Training agent...
+
+
+********** Iteration 124000 ************
+
+Training agent...
+
+
+********** Iteration 125000 ************
+
+Training agent...
+
+
+********** Iteration 126000 ************
+
+Training agent...
+
+
+********** Iteration 127000 ************
+
+Training agent...
+
+
+********** Iteration 128000 ************
+
+Training agent...
+
+
+********** Iteration 129000 ************
+
+Training agent...
+
+
+********** Iteration 130000 ************
+
+Training agent...
+
+
+********** Iteration 131000 ************
+
+Training agent...
+
+
+********** Iteration 132000 ************
+
+Training agent...
+
+
+********** Iteration 133000 ************
+
+Training agent...
+
+
+********** Iteration 134000 ************
+
+Training agent...
+
+
+********** Iteration 135000 ************
+
+Training agent...
+
+
+********** Iteration 136000 ************
+
+Training agent...
+
+
+********** Iteration 137000 ************
+
+Training agent...
+
+
+********** Iteration 138000 ************
+
+Training agent...
+
+
+********** Iteration 139000 ************
+
+Training agent...
+
+
+********** Iteration 140000 ************
+
+Training agent...
+
+
+********** Iteration 141000 ************
+
+Training agent...
+
+
+********** Iteration 142000 ************
+
+Training agent...
+
+
+********** Iteration 143000 ************
+
+Training agent...
+
+
+********** Iteration 144000 ************
+
+Training agent...
+
+
+********** Iteration 145000 ************
+
+Training agent...
+
+
+********** Iteration 146000 ************
+
+Training agent...
+
+
+********** Iteration 147000 ************
+
+Training agent...
+
+
+********** Iteration 148000 ************
+
+Training agent...
+
+
+********** Iteration 149000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 150000
+running time 572.429003
+  [Eval video] saved to: /home/rishic/Code/cs224r/hw3/cs224r/scripts/../../data/hw3_awac_antmaze_umaze_seed2_antmaze-umaze-v0_04-05-2026_22-01-01/eval_traj_last.mp4
+Train_EnvstepsSoFar : 150000
+TimeSinceStart : 572.4290025234222
+Critic Loss : 5.328412055969238
+Critic Loss2 : 5.866180419921875
+Actor Loss : 27.718795776367188
+Actor LR : 4.9999999999999975e-05
+Eval_AverageReturn : -606.6199951171875
+Eval_StdReturn : 160.39686584472656
+Eval_MaxReturn : -181.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 606.92
+Buffer_Size : 998573
+Done logging...
+
+
+
+
+********** Iteration 150000 ************
+
+Training agent...
+
+
+********** Iteration 151000 ************
+
+Training agent...
+
+
+********** Iteration 152000 ************
+
+Training agent...
+
+
+********** Iteration 153000 ************
+
+Training agent...
+
+
+********** Iteration 154000 ************
+
+Training agent...
+
+
+********** Iteration 155000 ************
+
+Training agent...
+
+
+********** Iteration 156000 ************
+
+Training agent...
+
+
+********** Iteration 157000 ************
+
+Training agent...
+
+
+********** Iteration 158000 ************
+
+Training agent...
+
+
+********** Iteration 159000 ************
+
+Training agent...
+
+
+********** Iteration 160000 ************
+
+Training agent...
+
+
+********** Iteration 161000 ************
+
+Training agent...
+
+
+********** Iteration 162000 ************
+
+Training agent...
+
+
+********** Iteration 163000 ************
+
+Training agent...
+
+
+********** Iteration 164000 ************
+
+Training agent...
+
+
+********** Iteration 165000 ************
+
+Training agent...
+
+
+********** Iteration 166000 ************
+
+Training agent...
+
+
+********** Iteration 167000 ************
+
+Training agent...
+
+
+********** Iteration 168000 ************
+
+Training agent...
+
+
+********** Iteration 169000 ************
+
+Training agent...
+
+
+********** Iteration 170000 ************
+
+Training agent...
+
+
+********** Iteration 171000 ************
+
+Training agent...
+
+
+********** Iteration 172000 ************
+
+Training agent...
+
+
+********** Iteration 173000 ************
+
+Training agent...
+
+
+********** Iteration 174000 ************
+
+Training agent...
+
+
+********** Iteration 175000 ************
+
+Training agent...
+
+
+********** Iteration 176000 ************
+
+Training agent...
+
+
+********** Iteration 177000 ************
+
+Training agent...
+
+
+********** Iteration 178000 ************
+
+Training agent...
+
+
+********** Iteration 179000 ************
+
+Training agent...
+
+
+********** Iteration 180000 ************
+
+Training agent...
+
+
+********** Iteration 181000 ************
+
+Training agent...
+
+
+********** Iteration 182000 ************
+
+Training agent...
+
+
+********** Iteration 183000 ************
+
+Training agent...
+
+
+********** Iteration 184000 ************
+
+Training agent...
+
+
+********** Iteration 185000 ************
+
+Training agent...
+
+
+********** Iteration 186000 ************
+
+Training agent...
+
+
+********** Iteration 187000 ************
+
+Training agent...
+
+
+********** Iteration 188000 ************
+
+Training agent...
+
+
+********** Iteration 189000 ************
+
+Training agent...
+
+
+********** Iteration 190000 ************
+
+Training agent...
+
+
+********** Iteration 191000 ************
+
+Training agent...
+
+
+********** Iteration 192000 ************
+
+Training agent...
+
+
+********** Iteration 193000 ************
+
+Training agent...
+
+
+********** Iteration 194000 ************
+
+Training agent...
+
+
+********** Iteration 195000 ************
+
+Training agent...
+
+
+********** Iteration 196000 ************
+
+Training agent...
+
+
+********** Iteration 197000 ************
+
+Training agent...
+
+
+********** Iteration 198000 ************
+
+Training agent...
+
+
+********** Iteration 199000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 200000
+running time 764.555890
+  [Eval video] saved to: /home/rishic/Code/cs224r/hw3/cs224r/scripts/../../data/hw3_awac_antmaze_umaze_seed2_antmaze-umaze-v0_04-05-2026_22-01-01/eval_traj_last.mp4
+Train_EnvstepsSoFar : 200000
+TimeSinceStart : 764.5558896064758
+Critic Loss : 12.45541763305664
+Critic Loss2 : 16.082965850830078
+Actor Loss : 32.535850524902344
+Actor LR : 2.500000000000017e-05
+Eval_AverageReturn : -499.1600036621094
+Eval_StdReturn : 240.11126708984375
+Eval_MaxReturn : -151.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 499.58
+Buffer_Size : 998573
+Done logging...
+
+
+
+
+********** Iteration 200000 ************
+
+Training agent...
+
+
+********** Iteration 201000 ************
+
+Training agent...
+
+
+********** Iteration 202000 ************
+
+Training agent...
+
+
+********** Iteration 203000 ************
+
+Training agent...
+
+
+********** Iteration 204000 ************
+
+Training agent...
+
+
+********** Iteration 205000 ************
+
+Training agent...
+
+
+********** Iteration 206000 ************
+
+Training agent...
+
+
+********** Iteration 207000 ************
+
+Training agent...
+
+
+********** Iteration 208000 ************
+
+Training agent...
+
+
+********** Iteration 209000 ************
+
+Training agent...
+
+
+********** Iteration 210000 ************
+
+Training agent...
+
+
+********** Iteration 211000 ************
+
+Training agent...
+
+
+********** Iteration 212000 ************
+
+Training agent...
+
+
+********** Iteration 213000 ************
+
+Training agent...
+
+
+********** Iteration 214000 ************
+
+Training agent...
+
+
+********** Iteration 215000 ************
+
+Training agent...
+
+
+********** Iteration 216000 ************
+
+Training agent...
+
+
+********** Iteration 217000 ************
+
+Training agent...
+
+
+********** Iteration 218000 ************
+
+Training agent...
+
+
+********** Iteration 219000 ************
+
+Training agent...
+
+
+********** Iteration 220000 ************
+
+Training agent...
+
+
+********** Iteration 221000 ************
+
+Training agent...
+
+
+********** Iteration 222000 ************
+
+Training agent...
+
+
+********** Iteration 223000 ************
+
+Training agent...
+
+
+********** Iteration 224000 ************
+
+Training agent...
+
+
+********** Iteration 225000 ************
+
+Training agent...
+
+
+********** Iteration 226000 ************
+
+Training agent...
+
+
+********** Iteration 227000 ************
+
+Training agent...
+
+
+********** Iteration 228000 ************
+
+Training agent...
+
+
+********** Iteration 229000 ************
+
+Training agent...
+
+
+********** Iteration 230000 ************
+
+Training agent...
+
+
+********** Iteration 231000 ************
+
+Training agent...
+
+
+********** Iteration 232000 ************
+
+Training agent...
+
+
+********** Iteration 233000 ************
+
+Training agent...
+
+
+********** Iteration 234000 ************
+
+Training agent...
+
+
+********** Iteration 235000 ************
+
+Training agent...
+
+
+********** Iteration 236000 ************
+
+Training agent...
+
+
+********** Iteration 237000 ************
+
+Training agent...
+
+
+********** Iteration 238000 ************
+
+Training agent...
+
+
+********** Iteration 239000 ************
+
+Training agent...
+
+
+********** Iteration 240000 ************
+
+Training agent...
+
+
+********** Iteration 241000 ************
+
+Training agent...
+
+
+********** Iteration 242000 ************
+
+Training agent...
+
+
+********** Iteration 243000 ************
+
+Training agent...
+
+
+********** Iteration 244000 ************
+
+Training agent...
+
+
+********** Iteration 245000 ************
+
+Training agent...
+
+
+********** Iteration 246000 ************
+
+Training agent...
+
+
+********** Iteration 247000 ************
+
+Training agent...
+
+
+********** Iteration 248000 ************
+
+Training agent...
+
+
+********** Iteration 249000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 250000
+running time 956.437346
+  [Eval video] saved to: /home/rishic/Code/cs224r/hw3/cs224r/scripts/../../data/hw3_awac_antmaze_umaze_seed2_antmaze-umaze-v0_04-05-2026_22-01-01/eval_traj_last.mp4
+Train_EnvstepsSoFar : 250000
+TimeSinceStart : 956.4373464584351
+Critic Loss : 7.212706565856934
+Critic Loss2 : 9.869950294494629
+Actor Loss : 24.394018173217773
+Actor LR : 6.6987298107782025e-06
+Eval_AverageReturn : -453.4200134277344
+Eval_StdReturn : 251.8302764892578
+Eval_MaxReturn : -109.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 453.92
+Buffer_Size : 998573
+Done logging...
+
+
+
+
+********** Iteration 250000 ************
+
+Training agent...
+
+
+********** Iteration 251000 ************
+
+Training agent...
+
+
+********** Iteration 252000 ************
+
+Training agent...
+
+
+********** Iteration 253000 ************
+
+Training agent...
+
+
+********** Iteration 254000 ************
+
+Training agent...
+
+
+********** Iteration 255000 ************
+
+Training agent...
+
+
+********** Iteration 256000 ************
+
+Training agent...
+
+
+********** Iteration 257000 ************
+
+Training agent...
+
+
+********** Iteration 258000 ************
+
+Training agent...
+
+
+********** Iteration 259000 ************
+
+Training agent...
+
+
+********** Iteration 260000 ************
+
+Training agent...
+
+
+********** Iteration 261000 ************
+
+Training agent...
+
+
+********** Iteration 262000 ************
+
+Training agent...
+
+
+********** Iteration 263000 ************
+
+Training agent...
+
+
+********** Iteration 264000 ************
+
+Training agent...
+
+
+********** Iteration 265000 ************
+
+Training agent...
+
+
+********** Iteration 266000 ************
+
+Training agent...
+
+
+********** Iteration 267000 ************
+
+Training agent...
+
+
+********** Iteration 268000 ************
+
+Training agent...
+
+
+********** Iteration 269000 ************
+
+Training agent...
+
+
+********** Iteration 270000 ************
+
+Training agent...
+
+
+********** Iteration 271000 ************
+
+Training agent...
+
+
+********** Iteration 272000 ************
+
+Training agent...
+
+
+********** Iteration 273000 ************
+
+Training agent...
+
+
+********** Iteration 274000 ************
+
+Training agent...
+
+
+********** Iteration 275000 ************
+
+Training agent...
+
+
+********** Iteration 276000 ************
+
+Training agent...
+
+
+********** Iteration 277000 ************
+
+Training agent...
+
+
+********** Iteration 278000 ************
+
+Training agent...
+
+
+********** Iteration 279000 ************
+
+Training agent...
+
+
+********** Iteration 280000 ************
+
+Training agent...
+
+
+********** Iteration 281000 ************
+
+Training agent...
+
+
+********** Iteration 282000 ************
+
+Training agent...
+
+
+********** Iteration 283000 ************
+
+Training agent...
+
+
+********** Iteration 284000 ************
+
+Training agent...
+
+
+********** Iteration 285000 ************
+
+Training agent...
+
+
+********** Iteration 286000 ************
+
+Training agent...
+
+
+********** Iteration 287000 ************
+
+Training agent...
+
+
+********** Iteration 288000 ************
+
+Training agent...
+
+
+********** Iteration 289000 ************
+
+Training agent...
+
+
+********** Iteration 290000 ************
+
+Training agent...
+
+
+********** Iteration 291000 ************
+
+Training agent...
+
+
+********** Iteration 292000 ************
+
+Training agent...
+
+
+********** Iteration 293000 ************
+
+Training agent...
+
+
+********** Iteration 294000 ************
+
+Training agent...
+
+
+********** Iteration 295000 ************
+
+Training agent...
+
+
+********** Iteration 296000 ************
+
+Training agent...
+
+
+********** Iteration 297000 ************
+
+Training agent...
+
+
+********** Iteration 298000 ************
+
+Training agent...
+
+
+********** Iteration 299000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 300000
+running time 1145.998360
+  [Eval video] saved to: /home/rishic/Code/cs224r/hw3/cs224r/scripts/../../data/hw3_awac_antmaze_umaze_seed2_antmaze-umaze-v0_04-05-2026_22-01-01/eval_traj_last.mp4
+Train_EnvstepsSoFar : 300000
+TimeSinceStart : 1145.9983596801758
+Critic Loss : 5.35105037689209
+Critic Loss2 : 4.6735053062438965
+Actor Loss : 20.66667938232422
+Actor LR : 0.0
+Eval_AverageReturn : -362.94000244140625
+Eval_StdReturn : 236.53334045410156
+Eval_MaxReturn : -127.0
+Eval_MinReturn : -700.0
+Eval_AverageEpLen : 363.62
+Buffer_Size : 998573
+Done logging...
+
+
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mawac_antmaze_umaze_seed2[0m at: [34mhttps://wandb.ai/rishic-stanford-university/HW3_OfflineRL_antmaze-umaze-v0-modal-v1/runs/60zkqkjy[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260504_220101-60zkqkjy/logs[0m
+Found 4 GPUs for rendering. Using device 0.

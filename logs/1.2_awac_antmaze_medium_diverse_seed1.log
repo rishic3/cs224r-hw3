@@ -1,0 +1,55 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:66: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  ).setParseAction(self._family)
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  self._parser.parseString(pattern)
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  self._parser.resetCache()
+Warning: All of online environments libraries in D4RL have been moved ]8;;https://github.com/Farama-Foundation/Gymnasium\Gymnasium]8;;\, ]8;;https://github.com/Farama-Foundation/MiniGrid\MiniGrid]8;;\ and ]8;;https://github.com/Farama-Foundation/Gymnasium-Robotics\Gymnasium-Robotics]8;;\, and all offline datasets in D4RL have been moved to ]8;;https://github.com/Farama-Foundation/Minari\Minari]8;;\.
+These new versions include large bug fixes, new versions of Python, and are where all new development will continue. Please upgrade these libraries as soon as you're able to do so.
+If you'd like to read more about the story behind this switch, please check out ]8;;https://farama.org/Announcing-Minari\this blog post]8;;\.
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:283: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.12; use exec_module() instead
+pybullet build time: Jan 29 2025 23:16:28
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/rishic/.netrc.
+wandb: Currently logged in as: rishic (rishic-stanford-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:268: DeprecationWarning: Read the `app_url` setting from the appropriate Settings object.
+  app_url = wandb.util.app_url(tags["base_url"])  # type: ignore[index]
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:279: DeprecationWarning: The `Scope.user` setter is deprecated in favor of `Scope.set_user()`.
+  self.scope.user = {"email": email}
+wandb: setting up run 0slv1087
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:268: DeprecationWarning: Read the `app_url` setting from the appropriate Settings object.
+  app_url = wandb.util.app_url(tags["base_url"])  # type: ignore[index]
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:279: DeprecationWarning: The `Scope.user` setter is deprecated in favor of `Scope.set_user()`.
+  self.scope.user = {"email": email}
+wandb: Tracking run with wandb version 0.25.0
+wandb: Run data is saved locally in /home/rishic/Code/cs224r/hw3/wandb/run-20260505_213451-0slv1087
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run awac_antmaze_medium_diverse_seed1
+wandb: ⭐️ View project at https://wandb.ai/rishic-stanford-university/HW3_OfflineRL_antmaze-medium-diverse-v0-modal-v1
+wandb: 🚀 View run at https://wandb.ai/rishic-stanford-university/HW3_OfflineRL_antmaze-medium-diverse-v0-modal-v1/runs/0slv1087
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment antmaze-medium-diverse-v0 is out of date. You should consider upgrading to version `v2` with the environment ID `antmaze-medium-diverse-v2`.[0m
+  logger.warn(
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/d4rl/locomotion/ant.py:180: UserWarning: [33mThis environment is deprecated. Please use the most recent version of this environment.[0m
+  offline_env.OfflineEnv.__init__(self, **kwargs)
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.[0m
+  deprecation(
+
+
+
+LOGGING TO:  /home/rishic/Code/cs224r/hw3/cs224r/scripts/../../data/hw3_awac_antmaze_medium_diverse_seed1_antmaze-medium-diverse-v0_05-05-2026_21-34-51 
+
+
+
+Using GPU id 0
+Target Goal:  (20.417079192111245, 20.87149077975808)
+Target Goal:  (20.239885996505947, 20.265118958290323)
+
+Loading D4RL offline dataset from environment...
+Downloading dataset: http://rail.eecs.berkeley.edu/datasets/offline_rl/ant_maze_new/Ant_maze_big-maze_noisy_multistart_True_multigoal_True_sparse.hdf5 to /home/rishic/.d4rl/datasets/Ant_maze_big-maze_noisy_multistart_True_multigoal_True_sparse.hdf5
+load datafile:   0%|          | 0/8 [00:00<?, ?it/s]load datafile:  12%|█▎        | 1/8 [00:00<00:00,  8.39it/s]load datafile:  38%|███▊      | 3/8 [00:00<00:00,  8.00it/s]load datafile:  50%|█████     | 4/8 [00:00<00:00,  6.36it/s]load datafile:  62%|██████▎   | 5/8 [00:01<00:00,  3.78it/s]load datafile: 100%|██████████| 8/8 [00:01<00:00,  7.39it/s]

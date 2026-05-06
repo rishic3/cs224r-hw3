@@ -87,7 +87,7 @@ class IQLAgent(BaseAgent):
             q_sa = self.critic.get_q(ob_no, ac_na)
             # TODO: Estimate the advantage function.
             ### YOUR CODE START HERE ###
-            adv = None
+            adv = q_sa - v_pi
             ### YOUR CODE END HERE ###
         return adv
 
@@ -118,8 +118,8 @@ class IQLAgent(BaseAgent):
             # 1): Estimate the advantage
             # 2): Calculate the awac actor loss
             ### YOUR CODE START HERE ###
-
-            actor_loss = None
+            adv_n = self.estimate_advantage(ob_no, ac_na)
+            actor_loss = self.actor.update(ob_no, ac_na, adv_n)
             ### YOUR CODE END HERE ###
 
             critic_loss.update(

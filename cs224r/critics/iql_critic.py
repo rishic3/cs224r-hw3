@@ -114,8 +114,8 @@ class IQLCritic(BaseCritic):
         # HINT: See the Q_net setup above and v_optimizer setup below for
         #     the pattern to follow.
         ### YOUR CODE START HERE ###
-
-
+        self.v_net = v_network_initializer(self.ob_dim)
+        self.v_net.to(ptu.device)
         ### YOUR CODE END HERE ###
 
         self.v_optimizer = self.optimizer_spec.constructor(
@@ -191,8 +191,7 @@ class IQLCritic(BaseCritic):
         # HINT: self.iql_expectile provides the ζ value as described in the
         #     problem statement.
         ### YOUR CODE START HERE ###
-
-        pass
+        return torch.abs(self.iql_expectile - (diff < 0).float()) * diff.pow(2)
         ### YOUR CODE END HERE ###
 
     def update_v(self, ob_no, ac_na):
@@ -224,7 +223,7 @@ class IQLCritic(BaseCritic):
         # TODO: Compute loss for v_net.
         # HINT: Apply expectile regression between the target Q-values and the V-values to get the V-network loss.
         ### YOUR CODE START HERE ###
-        value_loss = None
+        value_loss = self.expectile_loss(q_t_values - v_t).mean()
         ### YOUR CODE END HERE ###
 
         self.v_optimizer.zero_grad()
@@ -267,9 +266,15 @@ class IQLCritic(BaseCritic):
         #     needs to be adjusted.
         # HINT: Compute MSE losses for both q_net and q_net2.
         ### YOUR CODE START HERE ###
+        q1 = self._get_q_value(self.q_net, ob_no, ac_na)
+        q2 = self._get_q_value(self.q_net2, ob_no, ac_na)
+
+        with torch.no_grad():
+            v_target = self.v_net(next_ob_no).squeeze(-1)
+            td_target = reward_n + self.gamma * v_target * (1 - terminal_n)
         
-        loss = None
-        loss2 = None
+        loss = self.mse_loss(q1, td_target)
+        loss2 = self.mse_loss(q2, td_target)
         ### YOUR CODE END HERE ###
 
         self.optimizer.zero_grad()

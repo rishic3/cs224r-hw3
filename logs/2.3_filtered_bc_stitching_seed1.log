@@ -1,0 +1,716 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:66: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  ).setParseAction(self._family)
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  self._parser.parseString(pattern)
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  self._parser.resetCache()
+Warning: All of online environments libraries in D4RL have been moved ]8;;https://github.com/Farama-Foundation/Gymnasium\Gymnasium]8;;\, ]8;;https://github.com/Farama-Foundation/MiniGrid\MiniGrid]8;;\ and ]8;;https://github.com/Farama-Foundation/Gymnasium-Robotics\Gymnasium-Robotics]8;;\, and all offline datasets in D4RL have been moved to ]8;;https://github.com/Farama-Foundation/Minari\Minari]8;;\.
+These new versions include large bug fixes, new versions of Python, and are where all new development will continue. Please upgrade these libraries as soon as you're able to do so.
+If you'd like to read more about the story behind this switch, please check out ]8;;https://farama.org/Announcing-Minari\this blog post]8;;\.
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/Cython/Distutils/old_build_ext.py:15: DeprecationWarning: dep_util is Deprecated. Use functions from setuptools instead.
+  from distutils.dep_util import newer, newer_group
+<frozen importlib._bootstrap>:283: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.12; use exec_module() instead
+pybullet build time: Jan 29 2025 23:16:28
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/rishic/.netrc.
+wandb: Currently logged in as: rishic (rishic-stanford-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:268: DeprecationWarning: Read the `app_url` setting from the appropriate Settings object.
+  app_url = wandb.util.app_url(tags["base_url"])  # type: ignore[index]
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:279: DeprecationWarning: The `Scope.user` setter is deprecated in favor of `Scope.set_user()`.
+  self.scope.user = {"email": email}
+wandb: setting up run x4q5n4qd
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:268: DeprecationWarning: Read the `app_url` setting from the appropriate Settings object.
+  app_url = wandb.util.app_url(tags["base_url"])  # type: ignore[index]
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/wandb/analytics/sentry.py:279: DeprecationWarning: The `Scope.user` setter is deprecated in favor of `Scope.set_user()`.
+  self.scope.user = {"email": email}
+wandb: Tracking run with wandb version 0.25.0
+wandb: Run data is saved locally in /home/rishic/Code/cs224r/hw3/wandb/run-20260506_220847-x4q5n4qd
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run filtered_bc_stitching_seed1
+wandb: ⭐️ View project at https://wandb.ai/rishic-stanford-university/HW3_OfflineRL_PointmassMedium-v0-modal-v1
+wandb: 🚀 View run at https://wandb.ai/rishic-stanford-university/HW3_OfflineRL_PointmassMedium-v0-modal-v1/runs/x4q5n4qd
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/_mathtext.py:30: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+WARNING:matplotlib.style.core:In /home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+WARNING:matplotlib.style.core:In /home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float64[0m
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/rishic/anaconda3/envs/cs224r-hw3/lib/python3.10/site-packages/gym/wrappers/record_video.py:41: UserWarning: [33mWARN: Overwriting existing videos at /home/rishic/Code/cs224r/hw3/data/hw3_filtered_bc_stitching_seed1_PointmassMedium-v0_06-05-2026_22-08-47/gym folder (try specifying a different `video_folder` for the `RecordVideo` wrapper if this is not desired)[0m
+  logger.warn(
+
+
+
+LOGGING TO:  /home/rishic/Code/cs224r/hw3/cs224r/scripts/../../data/hw3_filtered_bc_stitching_seed1_PointmassMedium-v0_06-05-2026_22-08-47 
+
+
+
+Using GPU id 0
+
+Loading offline dataset from: offline_datasets/pointmass_stitching_dataset.npz
+
+  [Before filtering]
+    Trajectories : 79
+    Transitions  : 8184
+    Traj return  : mean=-102.987  max=-46.000  min=-150.000
+
+  [After filtering (top 10.0%)]
+    Trajectories : 8
+    Transitions  : 407
+    Traj return  : mean=-49.875  max=-46.000  min=-53.000
+Loaded 407 transitions into replay buffer.
+  [Dataset vis] Episode-length histogram saved to: vis/dataset/bc/lowpct-1_toppct10.0.png
+
+
+********** Iteration 0 ************
+
+Training agent...
+
+
+********** Iteration 1000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 2000
+running time 3.156911
+Train_EnvstepsSoFar : 2000
+TimeSinceStart : 3.1569108963012695
+Actor Loss : 0.9547346234321594
+Eval_AverageReturn : -41.599998474121094
+Eval_StdReturn : 13.499629020690918
+Eval_MaxReturn : -13.0
+Eval_MinReturn : -75.0
+Eval_AverageEpLen : 42.6
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 2000 ************
+
+Training agent...
+
+
+********** Iteration 3000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 4000
+running time 7.088898
+Train_EnvstepsSoFar : 4000
+TimeSinceStart : 7.088897705078125
+Actor Loss : 0.6919664144515991
+Eval_AverageReturn : -51.349998474121094
+Eval_StdReturn : 17.11220359802246
+Eval_MaxReturn : -19.0
+Eval_MinReturn : -86.0
+Eval_AverageEpLen : 52.35
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 4000 ************
+
+Training agent...
+
+
+********** Iteration 5000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 6000
+running time 11.031260
+Train_EnvstepsSoFar : 6000
+TimeSinceStart : 11.03126049041748
+Actor Loss : 0.44839993119239807
+Eval_AverageReturn : -57.95000076293945
+Eval_StdReturn : 23.495691299438477
+Eval_MaxReturn : -18.0
+Eval_MinReturn : -112.0
+Eval_AverageEpLen : 58.95
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 6000 ************
+
+Training agent...
+
+
+********** Iteration 7000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 8000
+running time 15.055297
+Train_EnvstepsSoFar : 8000
+TimeSinceStart : 15.055297136306763
+Actor Loss : 0.3295528292655945
+Eval_AverageReturn : -54.349998474121094
+Eval_StdReturn : 25.044511795043945
+Eval_MaxReturn : -26.0
+Eval_MinReturn : -131.0
+Eval_AverageEpLen : 55.35
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 8000 ************
+
+Training agent...
+
+
+********** Iteration 9000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 10000
+running time 19.003624
+Train_EnvstepsSoFar : 10000
+TimeSinceStart : 19.003623723983765
+Actor Loss : 0.2461567223072052
+Eval_AverageReturn : -56.400001525878906
+Eval_StdReturn : 23.614404678344727
+Eval_MaxReturn : -22.0
+Eval_MinReturn : -105.0
+Eval_AverageEpLen : 57.4
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 10000 ************
+
+Training agent...
+
+
+********** Iteration 11000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 12000
+running time 22.955706
+Train_EnvstepsSoFar : 12000
+TimeSinceStart : 22.955706119537354
+Actor Loss : 0.19763953983783722
+Eval_AverageReturn : -48.70000076293945
+Eval_StdReturn : 12.186467170715332
+Eval_MaxReturn : -26.0
+Eval_MinReturn : -72.0
+Eval_AverageEpLen : 49.7
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 12000 ************
+
+Training agent...
+
+
+********** Iteration 13000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 14000
+running time 26.763636
+Train_EnvstepsSoFar : 14000
+TimeSinceStart : 26.763635635375977
+Actor Loss : 0.19658485054969788
+Eval_AverageReturn : -63.900001525878906
+Eval_StdReturn : 25.750534057617188
+Eval_MaxReturn : -26.0
+Eval_MinReturn : -109.0
+Eval_AverageEpLen : 64.9
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 14000 ************
+
+Training agent...
+
+
+********** Iteration 15000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 16000
+running time 30.749727
+Train_EnvstepsSoFar : 16000
+TimeSinceStart : 30.749727249145508
+Actor Loss : 0.1631980538368225
+Eval_AverageReturn : -50.0
+Eval_StdReturn : 25.033977508544922
+Eval_MaxReturn : -23.0
+Eval_MinReturn : -136.0
+Eval_AverageEpLen : 51.0
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 16000 ************
+
+Training agent...
+
+
+********** Iteration 17000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 18000
+running time 34.617493
+Train_EnvstepsSoFar : 18000
+TimeSinceStart : 34.61749291419983
+Actor Loss : 0.1383214145898819
+Eval_AverageReturn : -62.0
+Eval_StdReturn : 17.9888858795166
+Eval_MaxReturn : -37.0
+Eval_MinReturn : -114.0
+Eval_AverageEpLen : 63.0
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 18000 ************
+
+Training agent...
+
+
+********** Iteration 19000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 20000
+running time 38.561333
+Train_EnvstepsSoFar : 20000
+TimeSinceStart : 38.56133317947388
+Actor Loss : 0.16567561030387878
+Eval_AverageReturn : -59.150001525878906
+Eval_StdReturn : 30.17329216003418
+Eval_MaxReturn : -23.0
+Eval_MinReturn : -135.0
+Eval_AverageEpLen : 60.15
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 20000 ************
+
+Training agent...
+
+
+********** Iteration 21000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 22000
+running time 42.570709
+Train_EnvstepsSoFar : 22000
+TimeSinceStart : 42.57070851325989
+Actor Loss : 0.14058978855609894
+Eval_AverageReturn : -56.95000076293945
+Eval_StdReturn : 19.132368087768555
+Eval_MaxReturn : -25.0
+Eval_MinReturn : -110.0
+Eval_AverageEpLen : 57.95
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 22000 ************
+
+Training agent...
+
+
+********** Iteration 23000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 24000
+running time 46.510079
+Train_EnvstepsSoFar : 24000
+TimeSinceStart : 46.51007866859436
+Actor Loss : 0.13851039111614227
+Eval_AverageReturn : -55.20000076293945
+Eval_StdReturn : 26.024221420288086
+Eval_MaxReturn : -24.0
+Eval_MinReturn : -139.0
+Eval_AverageEpLen : 56.2
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 24000 ************
+
+Training agent...
+
+
+********** Iteration 25000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 26000
+running time 50.507398
+Train_EnvstepsSoFar : 26000
+TimeSinceStart : 50.5073983669281
+Actor Loss : 0.1056661605834961
+Eval_AverageReturn : -60.349998474121094
+Eval_StdReturn : 19.06377410888672
+Eval_MaxReturn : -32.0
+Eval_MinReturn : -107.0
+Eval_AverageEpLen : 61.35
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 26000 ************
+
+Training agent...
+
+
+********** Iteration 27000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 28000
+running time 54.463977
+Train_EnvstepsSoFar : 28000
+TimeSinceStart : 54.46397662162781
+Actor Loss : 0.09286166727542877
+Eval_AverageReturn : -48.0
+Eval_StdReturn : 14.747880935668945
+Eval_MaxReturn : -25.0
+Eval_MinReturn : -71.0
+Eval_AverageEpLen : 49.0
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 28000 ************
+
+Training agent...
+
+
+********** Iteration 29000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 30000
+running time 58.341899
+Train_EnvstepsSoFar : 30000
+TimeSinceStart : 58.341899394989014
+Actor Loss : 0.11732394993305206
+Eval_AverageReturn : -60.95000076293945
+Eval_StdReturn : 23.732833862304688
+Eval_MaxReturn : -26.0
+Eval_MinReturn : -117.0
+Eval_AverageEpLen : 61.95
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 30000 ************
+
+Training agent...
+
+
+********** Iteration 31000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 32000
+running time 62.322722
+Train_EnvstepsSoFar : 32000
+TimeSinceStart : 62.32272243499756
+Actor Loss : 0.12331415712833405
+Eval_AverageReturn : -66.3499984741211
+Eval_StdReturn : 26.033201217651367
+Eval_MaxReturn : -33.0
+Eval_MinReturn : -135.0
+Eval_AverageEpLen : 67.35
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 32000 ************
+
+Training agent...
+
+
+********** Iteration 33000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 34000
+running time 66.293952
+Train_EnvstepsSoFar : 34000
+TimeSinceStart : 66.29395151138306
+Actor Loss : 0.1282254010438919
+Eval_AverageReturn : -58.54999923706055
+Eval_StdReturn : 18.99335479736328
+Eval_MaxReturn : -29.0
+Eval_MinReturn : -93.0
+Eval_AverageEpLen : 59.55
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 34000 ************
+
+Training agent...
+
+
+********** Iteration 35000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 36000
+running time 70.193147
+Train_EnvstepsSoFar : 36000
+TimeSinceStart : 70.1931471824646
+Actor Loss : 0.0860450267791748
+Eval_AverageReturn : -55.5
+Eval_StdReturn : 19.88592529296875
+Eval_MaxReturn : -29.0
+Eval_MinReturn : -108.0
+Eval_AverageEpLen : 56.5
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 36000 ************
+
+Training agent...
+
+
+********** Iteration 37000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 38000
+running time 74.071095
+Train_EnvstepsSoFar : 38000
+TimeSinceStart : 74.07109546661377
+Actor Loss : 0.09815139323472977
+Eval_AverageReturn : -50.95000076293945
+Eval_StdReturn : 16.01397705078125
+Eval_MaxReturn : -30.0
+Eval_MinReturn : -90.0
+Eval_AverageEpLen : 51.95
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 38000 ************
+
+Training agent...
+
+
+********** Iteration 39000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 40000
+running time 77.989078
+Train_EnvstepsSoFar : 40000
+TimeSinceStart : 77.98907780647278
+Actor Loss : 0.10149174183607101
+Eval_AverageReturn : -66.4000015258789
+Eval_StdReturn : 26.896839141845703
+Eval_MaxReturn : -23.0
+Eval_MinReturn : -143.0
+Eval_AverageEpLen : 67.4
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 40000 ************
+
+Training agent...
+
+
+********** Iteration 41000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 42000
+running time 82.013293
+Train_EnvstepsSoFar : 42000
+TimeSinceStart : 82.01329326629639
+Actor Loss : 0.08521588891744614
+Eval_AverageReturn : -54.20000076293945
+Eval_StdReturn : 13.280059814453125
+Eval_MaxReturn : -34.0
+Eval_MinReturn : -82.0
+Eval_AverageEpLen : 55.2
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 42000 ************
+
+Training agent...
+
+
+********** Iteration 43000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 44000
+running time 85.958351
+Train_EnvstepsSoFar : 44000
+TimeSinceStart : 85.9583511352539
+Actor Loss : 0.10577770322561264
+Eval_AverageReturn : -60.20000076293945
+Eval_StdReturn : 23.489572525024414
+Eval_MaxReturn : -24.0
+Eval_MinReturn : -111.0
+Eval_AverageEpLen : 61.2
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 44000 ************
+
+Training agent...
+
+
+********** Iteration 45000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 46000
+running time 89.950636
+Train_EnvstepsSoFar : 46000
+TimeSinceStart : 89.95063614845276
+Actor Loss : 0.09660343080759048
+Eval_AverageReturn : -67.4000015258789
+Eval_StdReturn : 23.30107307434082
+Eval_MaxReturn : -35.0
+Eval_MinReturn : -126.0
+Eval_AverageEpLen : 68.4
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 46000 ************
+
+Training agent...
+
+
+********** Iteration 47000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 48000
+running time 93.986852
+Train_EnvstepsSoFar : 48000
+TimeSinceStart : 93.9868516921997
+Actor Loss : 0.10060137510299683
+Eval_AverageReturn : -66.25
+Eval_StdReturn : 28.01049041748047
+Eval_MaxReturn : -30.0
+Eval_MinReturn : -147.0
+Eval_AverageEpLen : 67.25
+Buffer_Size : 407
+Done logging...
+
+
+
+
+********** Iteration 48000 ************
+
+Training agent...
+
+
+********** Iteration 49000 ************
+
+Training agent...
+
+Beginning logging procedure...
+Timestep 50000
+running time 97.987978
+Train_EnvstepsSoFar : 50000
+TimeSinceStart : 97.98797821998596
+Actor Loss : 0.08986809104681015
+Eval_AverageReturn : -66.55000305175781
+Eval_StdReturn : 29.097209930419922
+Eval_MaxReturn : -32.0
+Eval_MinReturn : -146.0
+Eval_AverageEpLen : 67.55
+Buffer_Size : 407
+Done logging...
+
+
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mfiltered_bc_stitching_seed1[0m at: [34mhttps://wandb.ai/rishic-stanford-university/HW3_OfflineRL_PointmassMedium-v0-modal-v1/runs/x4q5n4qd[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260506_220847-x4q5n4qd/logs[0m
